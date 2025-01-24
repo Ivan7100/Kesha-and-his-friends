@@ -3,13 +3,6 @@ import sys
 
 import pygame
 
-# Изображение не получится загрузить 
-# без предварительной инициализации pygame
-pygame.init()
-size = width, height = 500, 500
-screen = pygame.display.set_mode(size)
-
-
 def load_image(name, colorkey=None):
     fullname = os.path.join('data/images', name)
     # если файл не существует, то выходим
