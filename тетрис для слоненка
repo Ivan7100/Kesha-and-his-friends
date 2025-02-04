@@ -128,8 +128,8 @@ def main():
     display_surf = pg.display.set_mode((window_w, window_h))
     basic_font = pg.font.SysFont('arial', 20)
     big_font = pg.font.SysFont('verdana', 45)
-    pg.display.set_caption('Тетрис Lite')
-    showText('Тетрис Lite')
+    pg.display.set_caption('Тетрис')
+    showText('Тетрис')
     while True:
         runTetris()
         pauseScreen()
@@ -373,7 +373,7 @@ def gamecup(cup):
             drawBlock(x, y, cup[x][y])
 
 def drawTitle():
-    titleSurf = big_font.render('Тетрис Lite', True, title_color)
+    titleSurf = big_font.render('Тетрис', True, title_color)
     titleRect = titleSurf.get_rect()
     titleRect.topleft = (window_w - 425, 30)
     display_surf.blit(titleSurf, titleRect)
